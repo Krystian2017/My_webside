@@ -1,0 +1,38 @@
+{
+  "name": "nauka-gita-2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm-run-all test:html test:js",
+    "test:js": "globstar jshint js/*.js",
+    "test:html": "globstar nu-html-checker *.html",
+    "init-project": "npm install && npm-run-all init:*",
+    "init:dirs": "mkdir -p sass css vendor images js",
+    "init:files": "touch README.md index.html css/style.css sass/style.scss js/script.js",
+    "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
+    "server": "browser-sync --server --files \"css/*.css,index.html\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Krystian2017/nauka-gita.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Krystian2017/nauka-gita/issues"
+  },
+  "homepage": "https://github.com/Krystian2017/nauka-gita#readme",
+  "devDependencies": {
+    "autoprefixer-cli": "^1.0.0",
+    "browser-sync": "^2.23.6",
+    "globstar": "^1.0.0",
+    "jshint": "^2.9.5",
+    "node-sass": "^4.8.3",
+    "npm-run-all": "^4.1.2",
+    "nu-html-checker": "^0.1.0",
+    "onchange": "^3.3.0"
+  },
+  "dependencies": {},
+  "description": ""
+}
