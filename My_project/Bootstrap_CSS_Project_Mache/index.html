@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="Shortcut icon" href="data:image/png;base64,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">
+  </head>
+  <body>
+    <header class="container-fluid">
+      <!-- NAVIGATION -->
+      <div class="container">
+        <nav id="home" class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#"><span>///</span> WebSiteName</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="active-nav-link" href="#home">Home</a></li>
+              <li><a href="#about-us">About Us</a></li>
+              <li><a href="#our-services">Our Services</a></li>
+              <li><a href="#prices">Prices</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="jumbotron container">
+        <h2><span>MACHE</span> FREE PSD TEMPLATE</h2>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum metus ut augue sodales porttitor. Mauris vitae tincidunt diam. Aenean vel mollis risus. Fusce pellentesque nisi et pulvinar sagittis. Maecenas faucibus enim.</p>
+        <a class="btn btn-lg" href="#" role="button">Show more</a>
+      </div>
+    </header>
+    <section id="about-us">
+      <div class="color"></div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 col-lg-offset-1 info">
+            <div>
+              <h1>Powerfull PSD template available for free!</h1>
+              <hr>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit in libero non ullamcorper. Morbi porttitor semper egestas. Etiam vel dui lorem. Maecenas vitae risus sed mauris condimentum eleifend id sit amet sapien. Duis suscipit dictum mi, eget commodo quam. Aliquam euismod nibh velit, sed tempor dui luctus lacinia. Suspendisse tristique ut libero sit amet sodales. Curabitur quis maximus nunc.</p>
+              <a class="vide-link" href="#">SEE THE VIDEO <span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span></a>
+            </div>
+          </div>
+          <div class="col-lg-5 col-lg-offset-1 informations">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-1">
+                  <span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span>
+                </div>
+                <div class="col-lg-3">
+                  <h6>HIGH RESOLUTION</h6>
+                  <p class="about-us-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis lectus eu velit varius volutpat. Curabitur aliquam mi aliquet.</p>
+                </div>
+                <div class="col-lg-1">
+                  <span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
+                </div>
+                <div class="col-lg-3">
+                  <h6>PHOTOGRAPHY</h6>
+                  <p class="about-us-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis lectus eu velit varius volutpat. Curabitur aliquam mi aliquet.</p>
+                </div>  
+                <div class="col-lg-1">
+                  <span class="glyphicon glyphicon-modal-window" aria-hidden="true"></span>
+                </div>  
+                <div class="col-lg-3">
+                  <h6>EASY TO CUSTOMIZE</h6>
+                  <p class="about-us-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis lectus eu velit varius volutpat. Curabitur aliquam mi aliquet.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-1">
+                  <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                </div>
+                <div class="col-lg-3">
+                  <h6>24/7 SUPPORT</h6>
+                  <p class="about-us-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis lectus eu velit varius volutpat. Curabitur aliquam mi aliquet.</p>
+                </div>
+                <div class="col-lg-1">
+                  <span class="glyphicon glyphicon-scale" aria-hidden="true"></span>
+                </div>
+                <div class="col-lg-3">
+                  <h6>POWERFULL THEME</h6>
+                  <p class="about-us-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis lectus eu velit varius volutpat. Curabitur aliquam mi aliquet.</p>
+                </div>  
+                <div class="col-lg-1">
+                  <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
+                </div>  
+                <div class="col-lg-3">
+                  <h6>SEO OPTIMIZATION</h6>
+                  <p class="about-us-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis lectus eu velit varius volutpat. Curabitur aliquam mi aliquet.</p>
+                </div>
+              </div>
+              <div class="join-us">
+                <h4>BECAME A PART OF MACHE COMMUNITY TBODY</h4>
+                <a class="btn join" href="#">JOIN US</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="our-services" class="container-fluid">
+      <div class="container text-center">
+        <div class="services">
+          <h1>Our Services</h1>
+          <hr>
+        </div>
+        <p class="info-services">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit arcu quis purus blandit elementum id eu est. Sed facilisis, neque sed efficitur pellentesque, diam nisi dignissim.</p> 
+      </div>
+      <div class="container">
+        <div class="row row-services">
+          <div class="col-lg-3 col-sm-6">
+            <div class="services-info">
+              <div class="icon-services">
+                <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>    
+              </div>
+              <h5 class="text-center">FULLY EDITABLE</h5>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="services-info">
+              <div class="icon-services">
+                <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span>    
+              </div>
+              <h5 class="text-center">FREE DOWNLOAD</h5>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="services-info">
+              <div class="icon-services">
+                <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>    
+              </div>
+              <h5 class="text-center">MODERN DESIGN</h5>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="services-info">
+              <div class="icon-services">
+                <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>    
+              </div>
+              <h5 class="text-center">100% RESPONSIVE</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="citations">
+      <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
+          <!-- slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <div class="carousel-caption">
+                <i class="fas fa-quote-left"></i>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit arcu quis purus blandit elementum id eu est. Sed facilisis, neque sed efficitur pellentesque, diam nisi dignissim.</p>
+                <i class="fas fa-quote-right"></i>
+              </div>
+            </div>
+            <div class="item">
+              <div class="carousel-caption">
+                <i class="fas fa-quote-left"></i>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit arcu quis purus blandit elementum id eu est. Sed facilisis, neque sed efficitur pellentesque, diam nisi dignissim.</p>
+                <i class="fas fa-quote-right"></i>
+              </div>
+            </div>          
+            <div class="item">
+              <div class="carousel-caption">
+                <i class="fas fa-quote-left"></i>
+                <p class="text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit arcu quis purus blandit elementum id eu est. Sed facilisis, neque sed efficitur pellentesque, diam nisi dignissim.</p>
+                <i class="fas fa-quote-right"></i>
+              </div>
+            </div>
+            <div class="item">
+              <div class="carousel-caption">
+                <i class="fas fa-quote-left"></i>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit arcu quis purus blandit elementum id eu est. Sed facilisis, neque sed efficitur pellentesque, diam nisi dignissim.</p>
+                <i class="fas fa-quote-right"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="prices">
+      <div class="container text-center">
+        <div class="prices">
+          <h1>Check Our Prices</h1>
+          <hr>
+        </div>
+        <p class="info-prices">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit arcu quis purus blandit elementum id eu est. Sed facilisis, neque sed efficitur pellentesque, diam nisi dignissim.</p> 
+      </div>
+      <div class="container">
+        <div class="oferts">
+          <div class="col standard">
+            <div class="text-center prices-oferts">
+              <h2><small>$</small>19</h2>
+              <p>per month</p>
+            </div>
+            <p class="btn">STANDARD</p>
+            <li>5 Projects</li>
+            <li>200 MB Storage</li>
+            <li>Notification settings</li>
+            <li>Password protection</li>
+            <a href="#" class="btn btn-buy">BUY NOW</a>
+          </div>
+          <div class="col business">
+            <div class="text-center prices-oferts">
+              <h2><small>$</small>39</h2>
+              <p>per month</p>
+            </div>
+            <p class="btn">BUSINESS</p>
+            <li>15 Projects</li>
+            <li>1 GB Storage</li>
+            <li>Notification settings</li>
+            <li>Password protection</li>
+            <a href="#" class="btn btn-buy">BUY NOW</a>
+          </div>
+          <div class="col premium">
+            <div class="text-center prices-oferts">
+              <h2><small>$</small>59</h2>
+              <p>per month</p>
+            </div>
+            <p class="btn">PREMIUM</p>
+            <li>30 Projects</li>
+            <li>2 GB Storage</li>
+            <li>Notification settings</li>
+            <li>Password protection</li>
+            <a href="#" class="btn btn-buy">BUY NOW</a>
+          </div>
+          <div class="col unlimited">
+            <div class="text-center prices-oferts">
+              <h2><small>$</small>99</h2>
+              <p>per month</p>
+            </div>
+            <p class="btn">UNLIMITED</p>
+            <li>Unlimited Projects</li>
+            <li>Unlimited Storage</li>
+            <li>Notification settings</li>
+            <li>Password protection</li>
+            <a href="#" class="btn btn-buy">BUY NOW</a>
+          </div>          
+        </div>
+      </div>
+    </section>
+    <section id="informations-big" class="container-fluid">
+      <div class="informations">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-1">
+              <span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span>
+            </div>
+            <div class="col-lg-3">
+              <h4>HIGH RESOLUTION</h4>
+              <p class="about-us-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis lectus eu velit varius volutpat. Curabitur aliquam mi aliquet.</p>
+            </div>
+            <div class="col-lg-1">
+              <span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
+            </div>
+            <div class="col-lg-3">
+              <h4>PHOTOGRAPHY</h4>
+              <p class="about-us-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis lectus eu velit varius volutpat. Curabitur aliquam mi aliquet.</p>
+            </div>  
+            <div class="col-lg-1">
+              <span class="glyphicon glyphicon-modal-window" aria-hidden="true"></span>
+            </div>  
+            <div class="col-lg-3">
+              <h4>EASY TO CUSTOMIZE</h4>
+              <p class="about-us-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis lectus eu velit varius volutpat. Curabitur aliquam mi aliquet.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-1">
+              <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+            </div>
+            <div class="col-lg-3">
+              <h4>24/7 SUPPORT</h4>
+              <p class="about-us-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis lectus eu velit varius volutpat. Curabitur aliquam mi aliquet.</p>
+            </div>
+            <div class="col-lg-1">
+              <span class="glyphicon glyphicon-scale" aria-hidden="true"></span>
+            </div>
+            <div class="col-lg-3">
+              <h4>POWERFULL THEME</h4>
+              <p class="about-us-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis lectus eu velit varius volutpat. Curabitur aliquam mi aliquet.</p>
+            </div>  
+            <div class="col-lg-1">
+              <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
+            </div>  
+            <div class="col-lg-3">
+              <h4>SEO OPTIMIZATION</h4>
+              <p class="about-us-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis lectus eu velit varius volutpat. Curabitur aliquam mi aliquet.</p>
+            </div>
+          </div>
+          <div class="join-us">
+            <h3>BECAME A PART OF MACHE COMMUNITY TBODY</h3>
+            <a class="btn join" href="#">JOIN US</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container-fluid footer">
+        <p>© 2015 COPYRIGHT MACHE TEMPLATE</p>
+        <P>DESIGND BY <strong>KRYSTIAN BIENIEK</strong></P>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </body>
+</html>

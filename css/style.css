@@ -43,7 +43,7 @@ body {
 
 #welcome-section {
   min-height: 55vh;
-  padding-top: 45vh;
+  padding: 50px 0;
   background-color: #E0EBE8;
 }
 
