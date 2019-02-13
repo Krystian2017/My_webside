@@ -39,6 +39,22 @@ body {
   color: #418380;
 }
 
+@media(max-width: 767px) {
+  #navbar {
+    position: static;
+    text-align: center;
+  }
+
+  #navbar ul {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .nav-link {
+    padding: 0 5px;
+  }
+}
+
 /*HEADER*/
 
 #welcome-section {
@@ -116,6 +132,23 @@ body {
   background-color: #ADD8E6;
 }
 
+@media(max-width: 767px) {
+  #projects {
+    width: 100%;
+  }
+
+  .project-link {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+  }
+
+  .button {
+    width: 50%;
+  }
+}
+
 /*CONTACTS*/
 
 #contact {
@@ -153,6 +186,12 @@ body {
     line-height: 50px;
     margin-top: 20px;
     border-radius: 5px;
+  }
+}
+
+@media(max-width: 767px) {
+  #contact {
+    height: auto;
   }
 }
 
