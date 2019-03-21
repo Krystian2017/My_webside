@@ -75,10 +75,26 @@ body {
 
 #welcome-section img {
   max-width: 100%;
+  width: 15%;
   height: auto;
   display: block;
   margin: 0 auto;
   padding-bottom: 20px;
+}
+
+@media(max-width: 767px) {
+  #welcome-section img {
+    width: 40%;
+  }
+
+  #welcome-section h1 {
+    font-size: 20px;
+  }
+
+  #welcome-section {
+    min-height: 20vh;
+    padding: 20px;
+  }
 }
 
 /*PROJECTS*/
