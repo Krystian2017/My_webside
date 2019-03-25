@@ -1,86 +1,348 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krystian Bieniek</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <link rel="Shortcut icon" href="https://img.icons8.com/doodle/50/000000/boy.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="Shortcut icon" href="images/ikonKB.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
   </head>
   <body>
-<!-- NAVIGATION -->
-    <nav id="navbar">
-      <ul>
-        <li><a class="nav-link" href="#welcome-section">About</a></li>
-        <li><a class="nav-link" href="#projects">Work</a></li>
-        <li><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
 <!-- HEADER -->
     <header id="welcome-section">
-      <div class="img">
-        <img src="images/Profilowe.JPG" alt="Krystian">
+<!-- NAVIGATION -->
+      <nav id="nav" class="navbar">
+        <div class="container">
+          <div class="navbar-header hidden-xs">
+            <a class="navbar-brand" href="#welcome-section">
+              <img class="img-responsive" src="images/ikonKB.png">
+            </a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#welcome-section">Home</a></li>
+            <li><a href="#about">O mnie</a></li>
+            <li><a href="#offer">Oferta</a></li>
+            <li><a href="#technologies">Technologie</a></li>
+            <li><a href="#projects">Projekty</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+          <ul class="nav nav-tabs">
+            <li role="presentation" class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                MENU <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="active"><a href="#welcome-section">Home</a></li>
+                  <li><a href="#about">O mnie</a></li>
+                  <li><a href="#offer">Oferta</a></li>
+                  <li><a href="#technologies">Technologie</a></li>
+                  <li><a href="#projects">Projekty</a></li>
+                  <li><a href="#contact">Kontakt</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+<!-- JUMBOTRON -->
+      <div class="jumbotron">
+        <div class="container">
+          <h2>Krystian Bieniek</h2>
+          <h1>Front-end Developer</h1>
+          <p class="content">Wdrożę Twój projekt aplikacji i strony internetowej.</p>
+          <p><a class="btn btn-primary btn-lg" href="#offer" role="button">Dalej</a></p>
+        </div>
       </div>
-      <h1>Hey i'am Krystian</h1>
-      <a href="My_project/Certyfikat/index.html">Front-end developer</a>
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
     </header>
+<!-- ABOUT ME -->
+    <section id="about" class="text-center">
+      <div class="container">
+        <!-- <div class="content text-center"> -->
+          <h1>O MNIE</h1>
+          <br>
+          <div class="text-justify">
+            <p class="about">Nazywam się Krystian Bieniek i od 2017 roku zająłem się kodowaniem stron internetowych.</p>
+            <p class="about">Jestem osobą pracowitą i dobrze zorganizowaną z wieloletnim doświadczeniem w branży logistycznej. Od dziecka pasjonuję się programowaniem i mając na co dzień kontakt z komputerami postanowiłem przekwalifikować się aby zacząć pracę w branży IT. Obecnie skupiam się na doskonaleniu umiejętności popularnej bibliotece REACT. Ukończyłem kurs na <a class="certyficate" href="My_project/Certyfikat/index.html">Front-end developera</a> dzięki czemu posiadam podstawową wiedzę i umiejętności w tym zakresie.</p>
+            <p class="about">Uwielbiam snowboard, żeglugę, góry, poznawać nowych ludzi, żartować i pić piwo.</p> 
+          </div>
+        </div>
+      </div>
+      <!-- Carousel -->
+
+      <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+          </ol>
+
+          <!-- slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active example-1">
+              
+            </div>
+            <div class="item example-2">
+              
+            </div>         
+            <div class="item example-3">
+            
+            </div>
+            <div class="item example-4">
+              <p>Więcej zdjęć niedługo.</p>
+            </div>
+            <div class="item example-5">
+              <p>Więcej zdjęć niedługo.</p>
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+<!-- OFFER -->
+    <section id="offer">
+      <div class="container-fluid">
+        <h1 class="text-center">OFERTA</h1>
+        <!-- <div id="hide_web" class="container-fluid">
+          <div class="row">
+            <div class="col-md-offset-1 col-md-3">
+              <img class="img-responsive" src="images/monitor.png" alt="RWD">
+            </div>
+            <div class="col-md-offset-1 col-md-6">
+              <h2>KODOWANIE STRON</h2>
+              <p>Wykorzystuję nowoczesne technologie webowe,  dostosowane do współczesnych standardów W3C, optymalizację, konwencję oraz semantykę kodu i potrzeb klienta</p>
+            </div>
+          </div>
+        </div>
+        <div id="hide_rwd" class="container-fluid">
+          <div class="row">
+            <div class="col-md-offset-1 col-md-3">
+              <img class="img-responsive" src="images/rwd.jpg" alt="RWD">
+            </div>
+            <div class="col-md-offset-1 col-md-6">
+              <h2>RESPONSYWNY DESIGN</h2>
+              <p>Przywiązuję szczególną uwagę na RWD ponieważ w dzisiejszych czasach coraz więcej przeglądamy strony internetowe na przenośnych urządeniach typu smartfon, tablet.</p>
+            </div>
+          </div>          Nie skończony pomysł.
+        </div> -->
+        <div class="row text-center">
+          <div id="show_web" class="col-md-offset-3 col-md-2">
+            <i class="fas fa-laptop-code"></i>
+            <h2>KODOWANIE STRON</h2>
+            <p>Wykorzystuję nowoczesne technologie webowe,  dostosowane do współczesnych standardów W3C, optymalizację, konwencję oraz semantykę kodu i potrzeb klienta</p>
+          </div>
+          <div id="show_rwd" class="col-md-offset-2 col-md-2">
+            <i class="fas fa-tablet-alt"></i>
+            <h2>RESPONSYWNY DESIGN</h2>
+            <p>Przywiązuję szczególną uwagę na RWD ponieważ w dzisiejszych czasach coraz więcej przeglądamy strony internetowe na przenośnych urządeniach typu smartfon, tablet.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+<hr class="text-center">
+<!-- TECHNOLOGIES -->
+    <section id="technologies">
+      <div class="technologies container">
+        <h1 class="text-center">UMIEJĘTNOŚCI</h1>
+        <div class="row text-center">
+          <div class="col-xs-3 col-md-2">
+            <div class="technologie_item">
+              <i class="fab fa-html5"></i>
+            </div>
+            <h3>HTML</h3>
+          </div>
+          <div class="col-xs-3 col-md-2">
+            <div class="technologie_item">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <h3>CSS3</h3>
+          </div>
+          <div class="col-xs-3 col-md-2">
+            <div class="technologie_item">
+              <i class="fab fa-js-square"></i>
+            </div>
+            <h3>JS</h3>
+          </div>
+          <div class="col-xs-3 col-md-2">
+            <div class="technologie_item">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>RWD</h3>
+          </div>
+          <div class="col-xs-3 col-md-2">
+            <div class="technologie_item">
+              <i class="fab fa-bootstrap"></i>
+            </div>
+            <h3><span class="hidden-sm hidden-md hidden-lg">BS</span><span class="hidden-xs">BOOTSTRAP</span></h3>
+          </div>
+          <div class="col-xs-3 col-md-2">
+            <div class="technologie_item">
+              <i class="fab fa-sass"></i>
+            </div>
+            <h3>SASS</h3>
+          </div>
+          <div class="col-xs-3 col-md-2">
+            <div class="technologie_item">
+              <i class="fab fa-github-square"></i>
+            </div>
+            <h3><span class="hidden-sm hidden-md hidden-lg">GIT</span><span class="hidden-xs">GITHUB</span></h3>
+          </div>
+          <div class="col-xs-3 col-md-2">
+            <div class="technologie_item">
+              <i class="far fa-file-code"></i>
+            </div>
+            <h3><span class="hidden-sm hidden-md hidden-lg">JQ</span><span class="hidden-xs">JQUERY</span></h3>
+          </div>
+          <div class="col-xs-3 col-md-2">
+            <div class="technologie_item">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>AJAX</h3>
+          </div>
+          <div class="col-xs-3 col-md-2">
+            <div class="technologie_item">
+              <i class="fab fa-node"></i>
+            </div>
+            <h3>NODE</h3>
+          </div>
+          <div class="col-xs-3 col-md-2">
+            <div class="technologie_item">
+              <i class="fab fa-react"></i>
+            </div>
+            <h3><span class="hidden-sm hidden-md hidden-lg">RJS</span><span class="hidden-xs">REACT</span></h3>
+          </div>
+          <div class="col-xs-3 col-md-2">
+            <div class="technologie_item">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3><span class="hidden-sm hidden-md hidden-lg">MDB</span><span class="hidden-xs">MONGODB</span></h3>
+          </div>
+          <div class="col-xs-offset-1 col-xs-5 col-md-offset-4 col-md-2">
+            <div class="technologie_item">
+              <i class="fab fa-wordpress"></i>
+            </div>
+            <h3>WORDPRESS</h3>
+          </div>
+          <div class="col-xs-5 col-md-2">
+            <div class="technologie_item">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3>SUBLIME <span class="hidden-xs">TEXT</span></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
 <!-- PROJECTS -->
-    <section id="projects">
-      <h2>These are some of my projects..</h2>
-      <a class="project-link" href="My_project/Natalii_Stronka/index.html" target="_blank">
-        <img class="project-img" src="images/Natalii_strona.png">
-        <div class="project-title">BabyBalance</div>
-      </a>
-      <a class="project-link" href="My_project/Play_Rock_Paper_Scissors/index.html" target="_blank">
-        <img class="project-img" src="images/Rock_paper_scissors.png">
-        <div class="project-title">Game Rock Paper Scissors</div>
-      </a>
-      <a class="project-link" href="My_project/Build_a_Tribute Page/index.html" target="_blank">
-        <img class="project-img" src="https://cloud.githubusercontent.com/assets/15967809/17642794/d084d718-6171-11e6-83fa-ede5d0a67ad2.png">
-        <div class="project-title">Tribute Page</div>
-      </a>
-      <a class="project-link" href="My_project/Random_quote_machine/index.html" target="_blank">
-        <img class="project-img" src="images/Random_quote_machine.png">
-        <div class="project-title">Random Quote Machine</div>
-      </a>
-      <a class="project-link" href="My_project/Build_a_Produc_ Landing_Page/index.html" target="_blank">
-        <img class="project-img" src="images/Product_landing_page.png">
-        <div class="project-title">Product Landing Page</div>
-      </a>
-      <a class="project-link" href="My_project/Find_your_country/index.html" target="_blank">
-        <img class="project-img" src="images/Find_your_country.png">
-        <div class="project-title">Find Your Country</div>
-      </a>
-      <a class="project-link" href="My_project/Build_a_Survey_From/index.html" target="_blank">
-        <img class="project-img" src="images/Survey_Form.png">
-        <div class="project-title">Suvey Form</div>
-      </a>
-      <a class="project-link" href="My_project/Joke_Chuck_Norris/index.html" target="_blank">
-        <img class="project-img" src="images/Random_Joke.png">
-        <div class="project-title">Random Joke</div>
-      </a>
-      <a class="project-link" href="My_project/Build_a_Technical_Documentation_Page/index.html" target="_blank">
-        <img class="project-img" src="images/Technical_documentation.png">
-        <div class="project-title">Technical Documentation</div>
-      </a>
-      <a class="project-link" href="My_project/Kanban/index.html" target="_blank">
-        <img class="project-img" src="images/kanban.png">
-        <div class="project-title">Kanban</div>
-      </a>
-      <a class="button" href="https://github.com/Krystian2017" target="_blank">Show all</a>
+    <section id="projects" class="container-fluid text-center">
+        <h1>PROJEKTY</h1>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <a class="project-link" href="https://www.babybalance.no/" target="_blank">
+              <img class="project-img" src="images/Natalii_strona.png">
+              <div class="project-title">BabyBalance</div>
+            </a>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <a class="project-link" href="My_project/Play_Rock_Paper_Scissors/index.html" target="_blank">
+              <img class="project-img" src="images/Rock_paper_scissors.png">
+              <div class="project-title">Game Rock Paper Scissors</div>
+            </a>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <a class="project-link" href="My_project/Kanban/index.html" target="_blank">
+              <img class="project-img" src="images/kanban.png">
+              <div class="project-title">Kanban</div>
+            </a>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <a class="project-link" href="My_project/Random_quote_machine/index.html" target="_blank">
+              <img class="project-img" src="images/Random_quote_machine.png">
+              <div class="project-title">Random Quote Machine</div>
+            </a>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <a class="project-link" href="My_project/Joke_Chuck_Norris/index.html" target="_blank">
+              <img class="project-img" src="images/Random_Joke.png">
+              <div class="project-title">Random Joke</div>
+            </a>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <a class="project-link" href="My_project/Find_your_country/index.html" target="_blank">
+              <img class="project-img" src="images/Find_your_country.png">
+              <div class="project-title">Find Your Country</div>
+            </a>  
+          </div>
+          <div id="hide-js">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <a class="project-link" href="My_project/Build_a_Survey_From/index.html" target="_blank">
+                <img class="project-img" src="images/Survey_Form.png">
+                <div class="project-title">Suvey Form</div>
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <a class="project-link" href="My_project/Build_a_Produc_ Landing_Page/index.html" target="_blank">
+                <img class="project-img" src="images/Product_landing_page.png">
+                <div class="project-title">Product Landing Page</div>
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <a class="project-link" href="My_project/Build_a_Technical_Documentation_Page/index.html" target="_blank">
+                <img class="project-img" src="images/Technical_documentation.png">
+                <div class="project-title">Technical Documentation</div>
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <a class="project-link" href="My_project/Build_a_Tribute Page/index.html" target="_blank">
+                <img class="project-img" src="https://cloud.githubusercontent.com/assets/15967809/17642794/d084d718-6171-11e6-83fa-ede5d0a67ad2.png">
+                <div class="project-title">Tribute Page</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      <button id="show-js" class="btn btn-primary btn-lg">Pokaż więcej</button>
+      <div class="container">
+        <div id="particles-js">
+        
+        </div>
+      </div>
     </section>
 <!-- CONTACT -->
-    <section id="contact">
-      <div class="header-contact">
-        <h1>Let's work together...</h1>
-        <p>How do you take your coffee?</p>
+    <section id="contact" class="text-center">
+      <div class="container">
+        <h1><span class="hidden-sm hidden-md hidden-lg">KONTAKT</span><span class="hidden-xs">ZAPRASZAM DO KONTAKTU</span></h1>
+        <div class="row">
+          <div class="col-xs-6 col-sm-3 col-contact">
+            <a class="contact-link" href="https://www.facebook.com/krystian.bieniek.94" target="_blank">Facebook</a>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-contact">
+            <a class="contact-link" href="https://github.com/Krystian2017" target="_blank">GitHub</a>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-contact">
+            <a class="contact-link" href="https://www.linkedin.com/in/krystian-bieniek-11854b172/" target="_blank">LinkedIn</a>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-contact">
+            <a class="contact-link" href="mailto:krystekk2013@gmail.com" target="_blank">Send a mail</a>
+          </div>
+        </div>
       </div>
-      <a class="contact-link" href="https://www.facebook.com/krystian.bieniek.94" target="_blank">Facebook</a>
-      <a class="contact-link" href="https://github.com/Krystian2017" target="_blank">GitHub</a>
-      <a class="contact-link" href="https://www.linkedin.com/in/krystian-bieniek-11854b172/" target="_blank">LinkedIn</a>
-      <a class="contact-link" href="mailto:krystekk2013@gmail.com" target="_blank">Send a mail</a>
-      <a class="contact-link" href="tel:+4796659064" target="_blank">Call me</a>
     </section>
 <!-- FOOTER -->
     <footer>
@@ -92,9 +354,14 @@
         <i class="far fa-envelope"></i>
         <a href="mailto:krystian.bieniek1989@gmail.com" target="_blank">krystian.bieniek1989@gmail.com</a>
       </div>
-      <p>© Created by Krystian Bieniek</p>
+      <div>
+        <p>© Created by Krystian Bieniek</p>
+      </div>
     </footer>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript" src="js/script.js"></script> 
   </body>
 </html>
