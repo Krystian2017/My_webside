@@ -1,0 +1,58 @@
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  background-color: #0F0F0F;
+}
+
+.controls, .stopwatch {
+  text-align: center;
+  background-color: #607D8B;
+  width: 70%;
+  padding: 10px;
+  font-size: 5em;
+}
+
+div {
+  text-align: center;
+  background-color: #607D8B;
+  width: 70%;
+  padding: 10px;
+  font-size: 5em;
+}
+
+.stopwatch {
+  color: #fff;
+}
+
+.button {
+  margin: 10px;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 20px;
+  background-color: #6693a8;
+}
+
+.button:hover {
+  filter: opacity(60%);
+}
+
+.results {
+  width: 50%;
+  border: 5px solid #ccc;
+  margin: 20px auto;
+}
+
+.results li {
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  color: #fff;
+}

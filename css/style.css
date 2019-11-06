@@ -52,11 +52,6 @@ nav {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-#nav img {
-  width: 20%;
-  margin: 0 auto;
-}
-
 .nav-tabs {
   display: none;
   border-bottom: none;
@@ -81,6 +76,9 @@ nav {
   }
   .nav-tabs{
     display: inline-block;
+  }
+  .navbar-header {
+    float: left;
   }
 }
 
@@ -194,10 +192,9 @@ nav {
 }
 
 #about .about {
-  width: 70%;
+  width: 80%;
   font-size: 20px;
   color: #eee;
-  margin-bottom: 20px;
 }
 
 .certyficate {
@@ -211,8 +208,8 @@ nav {
 }
 
 #myCarousel {
-  width: 50%;
-  margin: 20px auto;
+  width: 80%;
+  margin-top: 20px;
 }
 
 .item {
@@ -262,7 +259,8 @@ nav {
     width: 100%;
   }
   #myCarousel {
-    width: 70%;
+    width: 100%;
+    margin-bottom: 20px;
   } 
 }
 
@@ -279,6 +277,7 @@ nav {
   }
   #myCarousel {
     width: 100%;
+    margin-bottom: 20px;
   }
 }
 
@@ -333,14 +332,14 @@ nav {
   color: #56A4A4;
 }
 
-#offer .col-md-2 h2 {
+#offer .col-md-3 h2 {
   margin: 50px 0;
   background: -webkit-linear-gradient(#56A4A4, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-#offer .col-md-2 p {
+#offer .col-md-3 p {
   text-align: justify;
   font-size: 20px;
   color: #56A4A4;
@@ -447,7 +446,7 @@ hr {
 /*PROJECTS*/
 
 #projects {
-  padding: 50px;
+  padding: 50px 50px 0 50px;
   color: #56A4A4;
   background-color: #222;
 }
@@ -471,6 +470,7 @@ hr {
 
 .project-link:hover {
   text-decoration: none;
+  opacity: 0.5;
 }
 
 .project-img {

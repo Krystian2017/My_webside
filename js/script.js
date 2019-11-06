@@ -28,11 +28,13 @@ function topFunction() {
   document.documentElement.scrollTop = 0; 
 }
 
+let btnProject = document.querySelector('#show-js');
+let btnShow = true;
+
 $(function() {
   $('#hide_web').hide();
   $('#show_web').click(function(event) {
     $('#hide_web').slideToggle();
-    // $('#offer .fas-hide-web').toggleClass('white');
   });
 });
 
@@ -40,14 +42,20 @@ $(function() {
   $('#hide_rwd').hide();
   $('#show_rwd').click(function(event) {
     $('#hide_rwd').slideToggle();
-    // $('#show_rwd').toggleClass('white');
   });
 });
 
 $(function() {
   $('#hide-js').hide();
-  $('#show-js').click(function(event) {
+  $(btnProject).click(function(event) {
     $('#hide-js').slideToggle();
+    if (btnShow) {
+      btnProject.textContent = 'Hide';
+      btnShow = false;
+    } else {
+      btnProject.textContent = "Show more";
+      btnShow = true;
+    }
   });
 });
 

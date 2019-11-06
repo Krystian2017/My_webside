@@ -10,7 +10,7 @@
     "init:dirs": "mkdir -p sass css vendor images js",
     "init:files": "touch README.md index.html css/style.css sass/style.scss js/script.js",
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
-    "server": "browser-sync --server --files \"css/*.css,index.html\""
+    "server": "browser-sync --server --files \"css/*.css,index.html,js/*.js\""
   },
   "repository": {
     "type": "git",
